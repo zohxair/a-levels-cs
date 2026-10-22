@@ -83,7 +83,3 @@ Contributions are welcome, especially new questions, corrections and examples in
 This is an independent revision resource. It is **not affiliated with, endorsed by or produced by Cambridge University Press & Assessment**. "Cambridge International" and the syllabus code 9618 are used only to identify the course the notes cover.
 
 The questions are original, written in the style of 9618 examination papers. They are **not** copies of past papers. For official past papers, mark schemes, the pseudocode guide and the current syllabus, use the [Cambridge International website](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-computer-science-9618/) or ask your teacher.
-
-## License
-
-No license has been chosen yet. Until one is added, all rights are reserved by the repository owner. To let others reuse and adapt the material, add a `LICENSE` file; for example, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) suits educational content.
