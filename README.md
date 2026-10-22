@@ -85,59 +85,6 @@ Each topic has its own URL, so pages can be bookmarked and shared:
 2. **`<main>`**: the content, one `<article class="topic">` per topic.
 3. **`<script>`**: builds the navigation and runs the interactive parts. It generates the topic headers, the "On this page" contents, the previous/next links, the sidebar, the overview cards, the search index, the answer boxes and the widgets from the article markup, so most edits only touch the content.
 
-## Editing and adding content
-
-### A topic
-
-```html
-<article class="topic" id="as-5" data-level="as" data-num="5"
-         data-title="System software" data-paper="Paper 1"
-         data-subs="5.1 Operating systems|5.2 Language translators">
-  <p class="lead">One-paragraph introduction.</p>
-  <h2>First section</h2>
-  ...
-</article>
-```
-
-- `id` is `as-N` or `a-N`. `data-num="0"` marks an overview page, which gets no header and isn't counted in progress.
-- `data-subs` is a `|`-separated list of syllabus subsections, each starting with its number.
-- Topics appear in the sidebar and in previous/next order in the same order as in the file.
-- Every `<h2>` becomes a search result and an entry in the "On this page" list (shown when a topic has three or more).
-
-### An exam question
-
-```html
-<div class="q">
-  <div class="q-top"><span class="q-n">1</span><span class="q-src">Paper 1 style</span></div>
-  <div class="q-text">
-    <div class="qp"><span class="ql">(a)</span><div>Question text.</div><span class="mk">[2]</span></div>
-    <div class="qp"><span class="ql">(b)</span><div>Question text.</div><span class="mk">[1]</span></div>
-  </div>
-  <details class="ms"><summary>Show mark scheme</summary><div class="ms-body">
-    <ul class="ticks"><li>Marking point</li></ul>
-    <p class="note">Max 2.</p>
-  </div></details>
-</div>
-```
-
-The answer box and the marks total (added up from each `[n]`) are inserted automatically.
-
-### Code
-
-```html
-<pre class="code" data-lang="pseudo">...</pre>
-```
-
-`data-lang` can be `pseudo`, `python`, `sql`, `asm`, `prolog`, or `text` for no highlighting. Escape `<` as `&lt;` and `&` as `&amp;` inside code. To support another language, add its keywords to `KW`, built-in functions to `FN`, its comment pattern to `COM`, and its label to `LANG` in the script.
-
-### A widget
-
-```html
-<div data-widget="truth" data-expr="(A AND B) OR NOT C"></div>
-```
-
-Available widgets: `numconv`, `truth` (with an optional starting `data-expr`), `sort`, `float`, `rpn`, `dijkstra`. To add a new one, define `W.yourname = el => { ... }` in the script, then use `<div data-widget="yourname"></div>`.
-
 ### Other building blocks
 
 | Markup | Use |
