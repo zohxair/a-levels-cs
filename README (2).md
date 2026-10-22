@@ -59,24 +59,6 @@ The content follows the Cambridge 9618 syllabus for **2026**. The **2027–2029*
 
 Download `index.html` and double-click it. It opens in any modern browser (Chrome, Edge, Firefox, Safari).
 
-### Host it on GitHub Pages
-
-1. Create a new repository and upload `index.html` (rename `cs9618-computer-science.html` to `index.html` if needed) and this `README.md`.
-2. In the repository, go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select the `main` branch and the `/ (root)` folder, then **Save**.
-4. After a minute or two, the site is live at `https://<your-username>.github.io/<repository-name>/`.
-
-### Linking to a topic
-
-Every topic and section has its own link, so you can send students straight to it:
-
-```
-https://<your-username>.github.io/<repository-name>/#as-4     → AS topic 4, Processor fundamentals
-https://<your-username>.github.io/<repository-name>/#a-16     → A Level topic 16, System software
-```
-
-`as-0` and `a-0` are the overview pages for each level.
-
 ## How it works
 
 - Everything (content, styles and scripts) is in one self-contained HTML file with no frameworks or libraries.
