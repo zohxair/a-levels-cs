@@ -69,13 +69,6 @@ Progress, theme and the last topic viewed at each level are saved in the browser
 
 Nothing is sent anywhere. Progress stays in that browser on that device, and clearing the site's data resets it. **Answers typed into the answer boxes are not saved** and are lost when the page reloads.
 
-## Links
-
-Each topic has its own URL, so pages can be bookmarked and shared:
-
-- `#as-0` and `#a-0` are the AS and A Level overviews
-- `#as-3` is AS topic 3, `#a-15` is A Level topic 15
-- `#as-3--logic-gates` jumps to a section. The part after `--` is the section heading in lower case with spaces and punctuation replaced by hyphens.
 
 ## How the file is organised
 
